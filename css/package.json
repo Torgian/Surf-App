@@ -1,0 +1,22 @@
+package.json:
+
+
+{
+  "name": "api-test-code",
+  "version": "0.0.1",
+  "description": "An API test for ナサロ",
+  "main": "index.js",
+  "dependencies": {
+    "hapi": "^6.0.1",
+    "msw-api": "0.0.12",
+    "prettyjson": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Matt and Nathan",
+  "license": "ISC"
+}
+

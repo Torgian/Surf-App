@@ -6,8 +6,13 @@
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tableStyle.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
+  <script src="js/requests.js"></script>
+  <script src="js/results.js"></script>
+
+
 </head>
 <body>
   <div class="grid-container centered">
@@ -18,31 +23,31 @@
             <h1>Surf Forcast</h1>
           </div>
             <div class="menu-wrap">
-              <nav class="menu">
-                <ul class="active">
+              <nav id="parent" class="menu">
+                <ul id="names-list" class="active">
                   <li class="current-item"><a href="#"></a></li>
-                  <li><a href="#">Baishawan</a></li>
-                  <li><a href="#">Bashien Dong</a></li>
-                  <li><a href="#">Cheng Gong</a></li>
-                  <li><a href="#">Chu Nan</a></li>
-                  <li><a href="#">Dashi</a></li>
-                  <li><a href="#">Fongbin</a></li>
-                  <li><a href="#">Fulong Beach</a></li>
-                  <li><a href="#">Gongs</a></li>
-                  <li><a href="#">Hualien</a></li>
-                  <li><a href="#">Jialeshuei</a></li>
-                  <li><a href="#">Jici Beach</a></li>
-                  <li><a href="#">Jin Shan</a></li>
-                  <li><a href="#">Nanwan</a></li>
-                  <li><a href="#">PD SPOT(Windmill)</a></li>
-                  <li><a href="#">Sanshuei</a></li>
-                  <li><a href="#">Shalun</a></li>
-                  <li><a href="#">Sunyatsen Beach</a></li>
-                  <li><a href="#">Taitung</a></li>
-                  <li><a href="#">Wushi</a></li>                                                                            
+                  <li><a href="#">Baishawan </a></li>
+                  <li><a href="#">Bashien Dong </a></li>
+                  <li><a href="#">Cheng Gong </a></li>
+                  <li><a href="#">Chu Nan </a></li>
+                  <li><a href="#">Dashi </a></li>
+                  <li><a href="#">Fongbin </a></li>
+                  <li><a href="#">Fulong Beach </a></li>
+                  <li><a href="#">Gongs </a></li>
+                  <li><a href="#">Hualien </a></li>
+                  <li><a href="#">Jialeshuei </a></li>
+                  <li><a href="#">Jici Beach </a></li>
+                  <li><a href="#">Jin Shan </a></li>
+                  <li><a href="#">Nanwan </a></li>
+                  <li><a href="#">PD SPOT(Windmill) </a></li>
+                  <li><a href="#">Sanshuei </a></li>
+                  <li><a href="#">Shalun </a></li>
+                  <li><a href="#">Sunyatsen Beach </a></li>
+                  <li><a href="#">Taitung </a></li>
+                  <li><a href="#">Wushi </a></li>                                                                 
                </ul>
 
-               <a class="toggle-nav" href="#">Select Beach <span class="arrow">&gt;</span></a>
+               <input type = 'button' id = "selectBut" value = 'Select Beach ' class= 'toggle-nav'>
 
                 
 
@@ -59,8 +64,15 @@
         <ul id="location">
 
         </ul>
+
       </div>
+      <div id="info"></div>
     </div>
   </div>
+  <div id = "beach_info" class="grid-100"> 
+    <!--<div id = "titleBar" class ="grid-100">-->
+    </div>
+  </div>
+
 </body>
 </html>
